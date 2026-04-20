@@ -1,46 +1,49 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # {Project Title}📝
+# # Mental Health Access in Cincinnati
 # 
 # ![Banner](./assets/banner.jpeg)
 
 # ## Topic
-# *What problem are you (or your stakeholder) trying to address?*
-# 📝 <!-- Answer Below -->
+# There is a growing epidemic of anxiey, depression and other mental health issues. I want to see if the area of Cincinnati has an abundance of mental health issues as well as the number of mental health service providers.
 
 # ## Project Question
-# *What specific question are you seeking to answer with this project?*
-# *This is not the same as the questions you ask to limit the scope of the project.*
-# 📝 <!-- Answer Below -->
+# How has mental health changed in Cincinnati over the last 5-10 years measured by the reported mental health issues and mental healtj service providers.
 
 # ## What would an answer look like?
 # *What is your hypothesized answer to your question?*
-# 📝 <!-- Answer Below -->
+# My hypothesized answer is that mental health service providers have increased over time, but not at a rate sufficient to meet the growing demand within the community. I expect to find that the number of individuals reporting mental health struggles has risen more rapidly than the number of available providers.
+# 
+# To support this, I will compare the growth in mental health service locations (such as clinics or offices) with the reported number of individuals experiencing mental health challenges. I anticipate a noticeable gap between these trends, indicating an unmet need for services.
+# 
+# Additionally, I will use heat maps to visualize areas with the highest levels of reported mental health need and compare them to the geographic distribution of providers. Bar charts will also be used to illustrate differences in growth rates between demand (reported cases) and supply (providers).
 
 # ## Data Sources
 # *What 3 data sources have you identified for this project?*
 # *How are you going to relate these datasets?*
-# 📝 <!-- Answer Below -->
+# 1. Health Resources and Services Administration Mental Health Professional Shortage Area (HPSA). Gives data on mental health service shortages with geographic coverage. 
+# 
+# 2. The Centers for Disease Control and Prevention (CDC) PLACES Project provides county- and city-level estimates of mental health indicators, such as the percentage of individuals reporting poor mental health. This dataset will be used to measure community need.
+# 
+# 3. The U.S. Census Bureau American Community Survey (ACS) provides demographic and population data. This will be used to normalize the data (e.g., providers per capita) and support analysis of trends over time in the Cincinnati area.
 
 # ## Approach and Analysis
-# *What is your approach to answering your project question?*
-# *How will you use the identified data to answer your project question?*
-# 📝 <!-- Start Discussing the project here; you can add as many code cells as you need -->
-
-# In[1]:
-
-
-# Start your code here
-
+# These datasets will be integrated using shared geographic identifiers, such as county names and Federal Information Processing Standards (FIPS) codes, as well as aligned by year to ensure consistency across time. 
+# 
+# Provider counts and shortage designations from the Health Resources and Services Administration (HRSA) dataset will be combined with population data from the U.S. Census Bureau American Community Survey (ACS) to calculate standardized metrics, such as the number of providers per 100,000 residents. This will allow for meaningful comparisons across regions with different population sizes.
+# 
+# Mental health indicators from the Centers for Disease Control and Prevention (CDC) PLACES Project will be aligned by county and year to represent community-level mental health needs.
+# 
+# By merging these datasets, the analysis will compare trends in mental health demand (reported distress) with provider availability (supply) over time. This approach will help identify geographic areas where mental health needs are increasing faster than access to care, highlighting potential gaps in service coverage.
 
 # ## Resources and References
 # *What resources and references have you used for this project?*
-# 📝 <!-- Answer Below -->
+# I used the 3 data sets and chat gpt to help find the data sets. 
 
-# In[ ]:
+# In[6]:
 
 
 # ⚠️ Make sure you run this cell at the end of your notebook before every submission!
-get_ipython().system('jupyter nbconvert --to python python-exercises.ipynb')
+get_ipython().system('jupyter nbconvert --to python source.ipynb')
 
